@@ -2,19 +2,17 @@
 $(function() {
   $(".eat-it").on("click", function(event) {
     var id = $(this).data("id");
-    var devoured = $(this).data("devoured");
-
-    var isDevoured = {
-      consumed: devoured
+    var devouredState = {
+      devoured: 1
     };
 
-    // Send the PUT request.
+     // Send the PUT request.
     $.ajax("/api/burgers/" + id, {
       type: "PUT",
       data: devouredState
     }).then(
       function() {
-        console.log("changed status to", devouredState);
+        console.log("Burger changed status to", devouredState);
         // Reload the page to get the updated list
         location.reload();
       }
@@ -26,8 +24,8 @@ $(function() {
     event.preventDefault();
 
     var newBurger = {
-      name: $("#burgerNameID").val().trim()
-      //devoured: $("").val().trim()   // what the heck is this???  Do we need it?
+      burger_name: $("#burgerNameID").val().trim(),
+      devoured: 0
     };
 
     // Send the POST request.
