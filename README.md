@@ -21,11 +21,11 @@ To use Eat-Da-Burger web application application from your local environment, yo
 
 **Step 1 - Clone my repo using the command line below.**
 ```
-git clone https://github.com/GrissomErick/Eat-Da-Burger.git
+git clone https://github.com/nicksessa/Burger.git
 ```
 **Step 2 - Change directory to the cloned repo folder.**
 ```
-cd Eat-Da-Burger
+cd Burger
 ```
 **Step 3 - Install all required NPM packages.**
 ```
@@ -35,21 +35,15 @@ npm install
 ```
 node server.js
 ```
+(A local installation of MySql is also needed if a local fork is used.)
 
-## Technology used
+## Software Packages Used
 - node.js - [https://nodejs.org/en/](https://nodejs.org/en/)
 - heroku-cli NPM Package - [https://www.npmjs.com/package/heroku-cli](https://www.npmjs.com/package/heroku-cli)
 - body-parser NPM Package - [https://www.npmjs.com/package/body-parser](https://www.npmjs.com/package/body-parser)
 - express NPM Package - [https://www.npmjs.com/package/express](https://www.npmjs.com/package/express)
 - path NPM Package - [https://www.npmjs.com/package/path](https://www.npmjs.com/package/path)
-
-<!--
-- node.js - [https://nodejs.org/en/](https://nodejs.org/en/)
 - mysql NPM Package - [https://www.npmjs.com/package/mysql](https://www.npmjs.com/package/mysql)
-- inquirer NPM Package - [https://www.npmjs.com/package/inquirer](https://www.npmjs.com/package/inquirer)
-- cli-table NPM Package - [https://www.npmjs.com/package/cli-table](https://www.npmjs.com/package/cli-table)
-- heroku-cli NPM Package - [https://www.npmjs.com/package/heroku-cli](https://www.npmjs.com/package/heroku-cli)
-- express NPM Package - [https://www.npmjs.com/package/express](https://www.npmjs.com/package/express)
-- path - [https://www.npmjs.com/package/path](https://www.npmjs.com/package/path)
-- body-parser NPM Package - [https://www.npmjs.com/package/body-parser](https://www.npmjs.com/package/body-parser)
--->
+
+
+
