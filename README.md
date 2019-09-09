@@ -12,9 +12,13 @@ This "Burger" application is a burger logger which incorporates MySQL, Node, Exp
 
 * The application stores every burger in a database, whether devoured or not.
 
+## View it on Heroku
+
+Eat-da-Burger - [https://boiling-refuge-07417.herokuapp.com/](https://boiling-refuge-07417.herokuapp.com/)
+ 
 ## NOTE
 
-Since this application uses Heroku to host, accessing the application on an open network such as a coffee shop, library, or even your University WiFi, it may be blocked. If you are experiencing a Heroku connection error, this could be why.
+Since this application uses Heroku to host, it may be blocked if you are accessing the application on an open network such as a coffee shop, library, or even your University WiFi. 
 
 ## Local Environment Setup
 To use Eat-Da-Burger web application application from your local environment, you must accomplish the following steps below:
