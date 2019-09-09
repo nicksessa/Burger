@@ -20,9 +20,10 @@
     </div><!-- /jumbotron -->
 
   <div class="row">
-    <div class="col">
-      <h3>Custom Burgers</h3>
-
+<div class="col-sm-6">
+            <div class="panel panel-default">
+                <div class="panel-heading" id="burgerReady"><strong>New Burgers</strong></div>
+                <div class="panel-body">
       <ul>
         {{#each burgers}}
         {{#unless devoured}}
@@ -31,12 +32,16 @@
         {{/unless}}
         {{/each}}
       </ul>
+    </div> <!-- END of the panel div -->
+    </div> <!-- END of the panel body -->
     </div> <!-- END of the col -->
     <div class="col">
       <p></p>
     </div>
-    <div class="col">
-      <h3>Burgers that have been eaten!</h3>
+    <div class="col-sm-6">
+      <div class="panel panel-default">
+                <div class="panel-heading" id="burgerEaten"><strong>Devoured Burgers</strong></div>
+                <div class="panel-body">
 
       <ul>
         {{#each burgers}}
@@ -48,6 +53,8 @@
         {{/if}}
         {{/each}}
       </ul>
+      </div>
+      </div>
     </div> <!-- END of the col -->
   </div> <!-- END of the Row -->
   <p>Enter the name of a burger that you want to eat, then click on submit</p>
