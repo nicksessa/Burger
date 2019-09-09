@@ -1,6 +1,6 @@
 # Burger Project Utilizing Node, Express and Handlebars
 
-### Overview
+## Overview
 
 This "Burger" application is a burger logger which incorporates MySQL, Node, Express, Handlebars and a homemade ORM. It follows the MVC design pattern and in particular uses Node and MySQL to query and route data in the application, and Handlebars to generate the HTML.
 
@@ -12,7 +12,7 @@ This "Burger" application is a burger logger which incorporates MySQL, Node, Exp
 
 * The application stores every burger in a database, whether devoured or not.
 
-### NOTE
+## NOTE
 
 Since this application uses Heroku to host, accessing the application on an open network such as a coffee shop, library, or even your University WiFi, it may be blocked. If you are experiencing a Heroku connection error, this could be why.
 
