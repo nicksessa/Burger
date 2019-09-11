@@ -1,5 +1,8 @@
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
 $(function() {
+
+  // EAT A BURGER
+
   $(".eatburger").on("click", function(event) {
     var id = $(this).data("id");
     var devouredState = {
@@ -18,6 +21,8 @@ $(function() {
       }
     );
   });
+
+  // ADD A BURGER
 
   $(".create-form").on("submit", function(event) {
     // Make sure to preventDefault on a submit event.
@@ -40,4 +45,19 @@ $(function() {
       }
     );
   });
+
+  // DELETE A BURGER (trash it)
+
+    $(".trashburger").on("click", function(event) {
+        event.preventDefault();
+
+        var id = $(this).data("id");
+
+        // Send the DELETE request.
+        $.ajax({
+            type: "DELETE",
+            url: "/api/burgers/" + id
+        }).then(location.reload());
+    });
+
 });
