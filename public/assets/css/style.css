@@ -36,7 +36,7 @@ li {
 }
 
 .jumbotron {
-    background-image: url("http://www.square1burgers.com/wp-content/uploads/2019/07/SQ1-BurgerHeader-2019-1.jpg");
+    background-image: url("/assets/images/Burger.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
