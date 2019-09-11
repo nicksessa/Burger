@@ -50,14 +50,18 @@ $(function() {
 
     $(".trashburger").on("click", function(event) {
         event.preventDefault();
-
+        console.log("the trash button was clicked")
         var id = $(this).data("id");
 
         // Send the DELETE request.
         $.ajax({
             type: "DELETE",
             url: "/api/burgers/" + id
-        }).then(location.reload());
+        }).then(
+          function() {
+            location.reload();
+            console.log("Burger was deleted")
+        })
     });
 
 });
