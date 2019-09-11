@@ -59,8 +59,9 @@ $(function() {
             url: "/api/burgers/" + id
         }).then(
           function() {
-            location.reload();
             console.log("Burger was deleted")
+            location.reload();
+            
         })
     });
 
